@@ -8,34 +8,33 @@ router.get('', (req, res) => {
 router.post('', (req, res, next) => {
     const { url } = req.body;
 
-    let errors = []
+    let errors = [];
 
-    if(!url) {
-        errors.push({ msg: 'Please enter url' })
+    if (!url ) {
+      errors.push({ msg: 'Please enter all fields' });
     }
-
-    if(errors > 0) {
-        res.render('index', {
-            errors,
-            url
-        });
-    } else {
-        let times = []
-        const start = Date.now();
+  
+    if (errors.length > 0) {
+      res.render('index', {
+        errors,
+        url
+      })} else {
+        let times = [];
 
         for(i = 0; i < 50; i++) {
             axios.get(url)
                 .then(response => {
+                    const start = Date.now();
                     let realTime = Date.now() - start; // calculate time difference
                     times.push(realTime)
-                    console.log(times)
                 })
                 .catch(err => console.log(err))
         }
-        const averageTime = times.reduce((a, b) => a + b, 0)
-        res.render('index', {
-            averageTime
-        })
+        const sum = times.reduce((a, b) => {
+            return a + b;
+        }, 0);
+        console.log(sum)
+        res.render('index')
     }
 })
 router.get('/donate', (req, res) => {

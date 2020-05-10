@@ -1,0 +1,21 @@
+.message-warning {
+    background-color: rgb(185, 83, 14);
+    padding:10px 20px;
+    color:white;
+    width:30%;
+
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.close {
+    background: none;
+    border:none;
+    outline:none;
+
+    color:white;
+    font-size:24px;
+}
+.close:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,8 @@
+<% if(typeof errors != 'undefined'){ %> <% errors.forEach(function(error) { %>
+    <div class="message-warning">
+      <%= error.msg %>
+      <button type="button" class="close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <% }); %> <% } %>
