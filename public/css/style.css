@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.main {
+    display: flex;
+    height:90vh;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.under{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:30vh;
+    justify-content: space-around;
+}
+.text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tagline{
+    font-size:40px;
+    text-transform:uppercase;
+}
+.underline {
+    margin-top:20px;
+}
+form {
+    display:flex;
+    width:105%;
+    justify-content: space-around;
+}
+.url {
+    padding-top:10px;
+    padding-bottom:10px;
+    width:800px;
+    padding-left:10px;
+}
+.submiturl{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:20px;
+
+    background: none;
+    outline: none;
+    border:none;
+
+    border:1px solid rgb(39, 39, 39);
+    transition: all ease-in-out 0.4s;
+}
+.submiturl:hover{
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
+    color:white;
+}
+.btcpay-input-price {
+    border:1px solid rgb(39, 39, 39) !important;
+}
