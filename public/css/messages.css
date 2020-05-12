@@ -2,11 +2,11 @@
     background-color: rgb(185, 83, 14);
     padding:10px 20px;
     color:white;
-    width:30%;
-
+    width:40%;
     display:flex;
     justify-content: space-around;
     align-items: center;
+    opacity: 1;
 }
 .close {
     background: none;

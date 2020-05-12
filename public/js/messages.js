@@ -1,6 +1,10 @@
-const div = document.querySelector('.message-warning');
 const closeBtn = document.querySelector('.close');
+let i;
 
-closeBtn.addEventListener('click', () => {
-    div.remove();
-})
+for(i = 0; i < closeBtn.length; i++ ) {
+    closeBtn[i].onclick = () => {
+        const div = closeBtn.parentElement;
+    
+        div.style.opacity = 0;
+    }
+}

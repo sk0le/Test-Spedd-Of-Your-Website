@@ -1,13 +1,25 @@
 <div class="main">
-    <div class="under">
-        <div class="text">
-            <h1 class="tagline">Test your website today for free!</h1>
-            <p class="underline">Test your website loading speed and responsivnes</p>
-        </div>
-        <%- include ('partials/messages') %>
-        <form action="/" method="POST">
-            <input type="text" name="url" class="url" placeholder="Enter url of website...">
-            <input type="submit" name="submiturl" class="submiturl" value="Test">
-        </form>
+  <div class="under">
+    <div class="text">
+      <h1 class="tagline">Test your website today for free!</h1>
+      <p class="underline">Test your website loading speed and responsivnes</p>
     </div>
+    <%- include ('partials/messages') %>
+    <form action="/" method="POST">
+      <input
+        type="text"
+        name="url"
+        class="url"
+        placeholder="Enter url of website..."
+        value="<%= typeof url != 'undefined' ? url : '' %>"
+      />
+      <input type="submit" name="submiturl" class="submiturl" value="Test" />
+    </form>
+    <% if(typeof realTime != 'undefined'){ %>
+    <h5>Response of that site is <span style="color: green;"><%= realTime %> </span>ms</h4>
+    <% } %>
+    <% if(typeof test != 'undefined'){ %>
+        <h5>We coudn't reach that <span style="color: red;">site</span></h5>
+    <% } %>
+  </div>
 </div>
