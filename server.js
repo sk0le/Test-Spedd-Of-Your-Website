@@ -26,5 +26,5 @@ app.use(express.static("public"));
 app.use("", require("./routes/index"));
 
 // Port and server starting
-PORT = 5000 || process.env.PORT;
+PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}...`));
