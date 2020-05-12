@@ -7,8 +7,11 @@ const app = express();
 
 // Database connection
 mongoose
-  .connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(console.log("MongoDB connected...")).URI;
+  .connect(
+    "mongodb+srv://sk0le:rubikovakocka@cluster0-grwna.mongodb.net/test?retryWrites=true&w=majority",
+    { useNewUrlParser: true, useUnifiedTopology: true }
+  )
+  .then(console.log("MongoDB connected..."));
 
 // EJS
 app.use(expressLayouts);
