@@ -79,7 +79,10 @@ form {
   .tagline {
     font-size: 32px;
   }
+  .underline {
+    text-align: center;
+  }
   .under {
-    height: 80vh !important;
+    height: 70vh !important;
   }
 }
