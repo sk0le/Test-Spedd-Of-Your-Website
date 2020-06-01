@@ -20,5 +20,5 @@
 
 ## Todos are :
 
-- Add automatic adding https:// infront of url
+- Add automatic adding https:// in front of url
 - Add new and better error handling
