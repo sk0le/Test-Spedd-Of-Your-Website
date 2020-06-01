@@ -58,8 +58,6 @@ form {
   background-color: rgb(39, 39, 39);
   cursor: pointer;
   color: white;
-  border: none;
-  outline: none;
 }
 .submiturl:focus {
   border: none;
