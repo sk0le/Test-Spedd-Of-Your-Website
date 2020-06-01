@@ -1,65 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
-    margin:0%;
-    padding:0%;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 .main {
-    display: flex;
-    height:90vh;
-    width:100%;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-.under{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    height:30vh;
-    justify-content: space-around;
+.under {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  width: 100%;
+  justify-content: space-around;
 }
-.text{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.tagline{
-    font-size:40px;
-    text-transform:uppercase;
+.tagline {
+  font-size: 40px;
+  text-transform: uppercase;
 }
 .underline {
-    margin-top:20px;
+  margin-top: 20px;
 }
 form {
-    display:flex;
-    width:105%;
-    justify-content: space-around;
+  display: flex;
 }
 .url {
-    padding-top:10px;
-    padding-bottom:10px;
-    width:800px;
-    padding-left:10px;
+  height: 50px;
+  padding-left: 10px;
+  width: 500px;
 }
-.submiturl{
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:20px;
-    padding-right:20px;
+.submiturl {
+  width: 80px;
+  height: 50px;
 
-    background: none;
-    outline: none;
-    border:none;
+  background: none;
+  outline: none;
+  border: none;
 
-    border:1px solid rgb(39, 39, 39);
-    transition: all ease-in-out 0.4s;
+  border: 1px solid rgb(39, 39, 39);
+  transition: all ease-in-out 0.4s;
+
+  margin-left: 15px;
 }
-.submiturl:hover{
-    background-color: rgb(39, 39, 39);
-    cursor: pointer;
-    color:white;
+.submiturl:hover {
+  background-color: rgb(39, 39, 39);
+  cursor: pointer;
+  color: white;
 }
-.btcpay-input-price {
-    border:1px solid rgb(39, 39, 39) !important;
+
+@media screen and (max-width: 1024px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .url {
+    width: 100% !important;
+  }
+
+  .submiturl {
+    margin-left: 0px !important;
+    margin-top: 15px;
+  }
 }
