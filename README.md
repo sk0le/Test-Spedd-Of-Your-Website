@@ -15,6 +15,8 @@
 ```bash
   git clone https://github.com/sk0le/Test-Speed-Of-Your-Website.git
 
+  cd Test-Speed-Of-Your-Website
+
   npm install
 
   npm run dev
